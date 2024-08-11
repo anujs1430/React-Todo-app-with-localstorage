@@ -1,0 +1,129 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  /* place-items: center; */
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+input {
+  padding: 10px;
+  font-size: 14px;
+  width: 60%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#todo-container {
+  padding: 1rem;
+  margin-top: 3rem;
+  border-radius: 10px;
+  background-color: #000;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 50vh;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  background: hsla(0, 0%, 13%, 0.9);
+  padding: 1rem;
+  border-radius: 7px;
+  display: flex;
+  justify-Content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.no-todo {
+  color: rgba(60, 60, 60, 0.867);
+  height: 40vh;
+  display: grid;
+  place-content: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media only screen and (max-width: 500px) {
+  #todo-container {
+    min-height: 100vh;
+    margin-top: 0;
+  }
+}
